@@ -1,0 +1,20 @@
+.text
+   li $t1, 2
+   li $t2, 5
+   li $t4, 89
+   li $t5, 20
+   li $t7, -80
+   li $t8, 1234
+   li $s0, 70
+   li $s1, 24
+   li $s3, 20
+   li $s4, 150
+   
+   #Soma
+   add $t3, $t1, $t2  
+   add $t6, $t4, $t5 
+   add $t9, $t7, $t8
+   
+   #Sub
+   sub $s2, $s0, $s1
+   sub $s5, $s3, $s4
