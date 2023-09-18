@@ -1,15 +1,6 @@
-.data
-prompt:     .asciiz "Digite um valor inteiro: "
-
 .text
-
-    li $v0, 4
-    la $a0, prompt
-    li $t1,30
-    syscall
-
-    # Ler o valor inserido pelo usuário
-    li $v0, 5
-    syscall
-    move $t0, $v0  # Armazenar o valor lido em $t0
+    # Carregando os valores de a e b da memória
+    li $t0, 54
+    li $t1, 45
+    # Somando a e b
     add $t2, $t0, $t1
