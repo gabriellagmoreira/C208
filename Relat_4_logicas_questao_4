@@ -1,0 +1,7 @@
+.text 
+li $t1, 324
+li $t2, 2018
+li $t3, 66
+nori $s0, $t1, 100  
+nori $s1, $t2, 1970  
+nori $s2, $t3, 33
