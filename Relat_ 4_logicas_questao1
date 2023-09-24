@@ -1,0 +1,15 @@
+.text 
+li $t1, 10
+li $t2, 25
+li $t3, 43
+li $t4, 89
+ #Deslocamento de bits
+sll $s0, $t1,4 # 10<<4 
+sll $s1, $t2,4 # 10<<4
+sll $s2, $t3,4 # 10<<4 
+sll $s3, $t4,4 # 10<<4
+
+sra $t5, $t1,7 # 10>>8
+sra $t6, $t2,7 # 25>>8
+sra $t7, $t3,7 # 43>>8
+sra $s0, $t4,7 # 89>>8
