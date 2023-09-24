@@ -1,0 +1,15 @@
+.text
+	#$s0 -> a
+	li $s1, 5 #b
+	li $s2, 3 #c
+	li $t0, 2 #x
+	li $t1, 3 #y
+	slt $t0, $t1, true #($t0 > $t1)
+	sub $s0, $s0, $s1
+add $s2, $s1,$s2
+	j exit
+true:
+
+	add $s1,$s0, s2
+	sub $s2, $s1, $s2
+exit:
