@@ -1,0 +1,9 @@
+li $s0, -10 # Carrega o valor de 'i' para o registrador $s0
+li $s1, 0   # Inicializa o valor de 'cont' com 0 no registrador $s1
+
+while_loop:
+blez $s0, end_while # Se i <= 0, sai do loop 'while_loop'
+
+addi $s1, $s1, 5 # cont = cont + 5
+addi $s0, $s0, -2 # i = i - 2
+j while_loop 
