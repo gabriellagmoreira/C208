@@ -1,0 +1,11 @@
+li $s0, 4 #a[0] = 4
+  li $s1, 5 #a[1] = 5
+  li $t2, 0 #j = 0
+  lw $t0, 0($s0)
+  lw $t1, 4($s1)
+  blt $t0, 5, Else
+   add $t2, $t1, 10
+   J Exit
+  Else:
+   add $s0, $t2, 2
+   Exit:
